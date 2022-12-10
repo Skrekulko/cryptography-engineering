@@ -1,10 +1,12 @@
 # Chapter 1 - The Context of Cryptography
 
-## Kerckhoff's principle
+## Notes
+
+### Kerckhoff's principle
 
 The security of the encryption scheme must depend only on the secrecy of the encryption key, and not on the secrecy of the algorithm.
 
-## Something To Think About
+### Something To Think About
 
 ***Don't trust secret algorithms.***
 
