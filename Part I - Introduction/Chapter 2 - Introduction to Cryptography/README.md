@@ -8,7 +8,7 @@ The security of the encryption scheme must depend only on the secrecy of the enc
 
 ***Don't trust secret algorithms.***
 
-## General Exercises
+## Exercises
 
 ### Exercise 2.1 - Consider Kerckhoffs’ principle. Provide at least two arguments in favor of Kerckhoffs’ principle and at least two arguments against Kerckhoffs’ principle. Then state and argue your view of the validity of Kerckhoffs’ principle.
 
