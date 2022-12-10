@@ -1,4 +1,4 @@
-# Chapter 1 - The Context of Cryptography
+# Chapter 2 - Introduction to Cryptography
 
 ## Notes
 
