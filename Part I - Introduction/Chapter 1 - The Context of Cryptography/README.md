@@ -1,19 +1,21 @@
 # Chapter 1 - The Context of Cryptography
 
-## Exercises for Professional Paranoia
+## Notes
+
+### Exercises for Professional Paranoia
 
 Discuss, think about, and immerse yourself in the subject of computer security.
 Perform regular exercises and write reports.
 You will gradually develop the professional paranoia mindset.
 (Professional paranoia is a sort of security thinking that focuses on how to attack something from the attacker's point of view.)
 
-## Current Event Exercises
+### Current Event Exercises
 
 Analyze a recent event in the news about computer security.
 It should be brief, succinct, thoughtful, and well-written.
 Assume a broad readership, with the article helping the reader in understanding the computer security discipline and how it fits into the larger environment.
 
-## Security Review Exercises
+### Security Review Exercises
 
 Evaluate the potential security and privacy concerns of emerging technologies, assess their severity, and explain ways to handle such security and privacy issues.
 
