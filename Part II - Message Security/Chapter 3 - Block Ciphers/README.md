@@ -178,7 +178,3 @@ $log_{2}2^{k}!\approx (k-1)2^{k}$
 > if __name__ == "__main__":
 >     main()
 > ```
-
-## References
-
-[1] [NFC Relay Attack On Tesla Model Y](https://labs.ioactive.com/2022/09/nfc-relay-attack-on-tesla-model-y-josep.html)
