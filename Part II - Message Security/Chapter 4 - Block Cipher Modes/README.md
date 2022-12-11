@@ -1,4 +1,4 @@
-# Chapter 3 - Block Cipher Modes
+# Chapter 4 - Block Cipher Modes
 
 ## Exercises
 
