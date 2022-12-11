@@ -6,7 +6,7 @@
 
 > $b=16,n=b=16$
 > 
-> $\rightarrow 0\leq n\leq b-1\Rightarrow 0\leq b\leq b-1\Rightarrow 0\leq 16\leq 16 - 1\Rightarrow 0\leq 16\leq 15$
+> 0\leq n\leq b-1\Rightarrow 0\leq b\leq b-1\Rightarrow 0\leq 16\leq 16 - 1\Rightarrow 0\leq 16\leq 15$
 > 
 > As you can see, we can't pad an *entire* block. As a result, if we need an input of, say, 32 bytes but only have 16 bytes of message, we can't pad the other 16 bytes.
 
@@ -31,7 +31,7 @@
 > 
 > $C_{1}=E_{K}(S)\bigoplus P_{1}\Rightarrow E_{K}(S)=P_{1}\bigoplus C_{1}$
 > 
-> C_{2}=E_{K}(S)\bigoplus P_{2}\Rightarrow P_{2}=E_{K}(S)\bigoplus C_{2}\Rightarrow P_{2}=P_{1}\bigoplus C_{1}\bigoplus C_{2}
+> $C_{2}=E_{K}(S)\bigoplus P_{2}\Rightarrow P_{2}=E_{K}(S)\bigoplus C_{2}\Rightarrow P_{2}=P_{1}\bigoplus C_{1}\bigoplus C_{2}$
 > 
 > ```python
 > #! /usr/bin/env python
