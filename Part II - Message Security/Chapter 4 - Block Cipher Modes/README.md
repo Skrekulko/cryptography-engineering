@@ -130,4 +130,11 @@
 > <br/>&emsp;64 f7 48 e0 8f 18 05 13 9b 75 b3 76 fd c7 83 bd 0d ff 4a c4 40 78 ea 8e
 
 ### Exercise 3.6 - Let $P1$, $P2$ be a message that is two blocks long, and let $P^{'}\_{1}$ be a message that is one block long. Let $C_{0}$, $C_{1}$, $C_{2}$ be the encryption of $P_{1}$, $P_{2}$ using CBC mode with a random IV and a random key, and let $C^{'}\_{0}$, $C^{'}\_{1}$ be the encryption of $P^{'}\_{1}$ using CBC mode with a random IV and the same key. Suppose an attacker knows $P_{1}$, $P_{2}$ and suppose the attacker intercepted and thus know $C_{0}$, $C_{1}$, $C_{2}$ and $C^{'}\_{0}$, $C^{'}\_{1}$. Further suppose that, by random chance, $C^{'}\_{1}=C_{2}$. Show that the attacker can compute $P^{'}\_{1}$.
+
+> Known values: $P_{1}, P_{2}, C_{0}, C_{1}, C_{2}, C^{'}\_{0}, C^{'}\_{1}$
 > 
+> $K_{1}=K_{2}=K, C^{'}\_{1}=C_{2}$
+> 
+> $P_{1}=D(K,C_{1})\bigoplus C_{0},P_{2}=D(K,C_{2})\bigoplus C_{1}\Rightarrow D(K,C_{2})=P_{2}\bigoplus C_{1}$
+> 
+> $P^{'}\_{1}=D(K,C^{'}\_{1})\bigoplus C^{'}\_{0}=D(K,C\_{2})\bigoplus C^{'}\_{0}=P_{2}\bigoplus C_{1}\bigoplus C^{'}\_{0}$
