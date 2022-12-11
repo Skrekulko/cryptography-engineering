@@ -27,11 +27,11 @@
 
 ### Exercise 3.3 - Suppose you, as an attacker, observe the following 32-byte ciphertext $C$ (in hex)<br/>&emsp;46 64 DC 06 97 BB FE 69 33 07 15 07 9B A6 C2 3D<br/>&emsp;2B 84 DE 4F 90 8D 7D 34 AA CE 96 8B 64 F3 DF 75<br/>and the following 32-byte ciphertext $C^{'}$ (also in hex)<br/>&emsp;51 7E CC 05 C3 BD EA 3B 33 57 0E 1B D8 97 D5 30<br/>&emsp;7B D0 91 6B 8D 82 6B 35 B7 8B BB 8D 74 E2 C7 3B.<br/>Suppose you know these ciphertexts were generated using CTR mode with the same nonce. The nonce is implicit, so it is not included in the ciphertext. You also know that the plaintext $P$ corresponding to $C$ is<br/>&emsp;43 72 79 70 74 6F 67 72 61 70 68 79 20 43 72 79<br/>&emsp;70 74 6F 67 72 61 70 68 79 20 43 72 79 70 74 6F.<br/>What information, if any, can you infer about the plaintext $P^{'}$ corresponding to $C^{'}$?
 
-> ![Exercise 3.7](exercise_4_3.png "Exercise 3.7")
+> ![Exercise 4.3](exercise_4_3.png "Exercise 4.3")
 > 
 > $C_{1}=E_{K}(S)\bigoplus P_{1}\Rightarrow E_{K}(S)=P_{1}\bigoplus C_{1}$
 > 
-> $C_{2}=E_{K}(S)\bigoplus P_{2}\Rightarrow P_{2}=E_{K}(S)\bigoplus C_{2}\Rightarrow P_{2}=P_{1}\bigoplus C_{1}\bigoplus C_{2}$
+> $C^{'}\_{1}=E_{K}(S)\bigoplus P^{'}\_{1}\Rightarrow P^{'}\_{1}=E_{K}(S)\bigoplus C^{'}\_{1}\Rightarrow P^{'}\_{1}=P_{1}\bigoplus C_{1}\bigoplus C^{'}\_{1}$
 > 
 > ```python
 > #! /usr/bin/env python
