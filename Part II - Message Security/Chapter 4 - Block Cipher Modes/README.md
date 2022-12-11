@@ -6,7 +6,7 @@
 
 > $b=16,n=b=16$
 > 
-> 0\leq n\leq b-1\Rightarrow 0\leq b\leq b-1\Rightarrow 0\leq 16\leq 16 - 1\Rightarrow 0\leq 16\leq 15$
+> $0\leq n\leq b-1\Rightarrow 0\leq b\leq b-1\Rightarrow 0\leq 16\leq 16 - 1\Rightarrow 0\leq 16\leq 15$
 > 
 > As you can see, we can't pad an *entire* block. As a result, if we need an input of, say, 32 bytes but only have 16 bytes of message, we can't pad the other 16 bytes.
 
