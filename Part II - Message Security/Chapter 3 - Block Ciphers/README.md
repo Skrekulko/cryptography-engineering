@@ -2,7 +2,7 @@
 
 ## Notes
 
-### Definition of Block Cipher Security
+### Definitions
 
 - **Definition 1** - *A secure block cipher is one for which no attack exists.*
 
