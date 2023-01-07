@@ -155,7 +155,7 @@ the hash function from an ideal hash function.*
 
 > Let hash function be $H_{k}=AES_k(H_{i-1}\bigoplus m_{i})$, where $H_{0}$ is a 128-bit block of all zeros, and message $m$ is split into 128-bit blocks $m_{1},...,m_{k}$, the padding scheme is not important. The hash function is built from AES with 256-bit key, and the key being set to all zeros.
 > 
-> Let message $m^{1}$:
+> Let message $m^{'}$:
 > 
 > ```math
 > m^{'}\left\{\begin{matrix}
@@ -177,4 +177,4 @@ the hash function from an ideal hash function.*
 
 ### Exercise 5.6 - Pick two of the SHA-3 candidate hash function submissions and compare their performance and their security under the currently best published attacks. Information about the SHA-3 candidates is available at http://www.schneier.com/ce.html.
 
-> Check this [paper](https://ieeexplore.ieee.org/abstract/document/6516382) of SHA-3 candidates and their comparison.
+> Check this [paper](https://ieeexplore.ieee.org/abstract/document/6516382) about SHA-3 candidates and their comparison.
