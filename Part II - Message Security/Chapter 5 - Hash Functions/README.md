@@ -157,24 +157,24 @@ the hash function from an ideal hash function.*
 
 ### Exercise 5.5 - In Section 5.2.1, we claimed that $m$ and $m^{'}$ both hash to $H\_{2}$. Show why this claim is true.
 
-> Let hash function be $H_{k}=AES_k(H_{i-1}\bigoplus m_{i})$, where $H_{0}$ is a 128-bit block of all zeros, and message $m$ is split into 128-bit blocks $m_{1},...,m_{k}$, the padding scheme is not important. The hash function is built from AES with 256-bit key, and the key being set to all zeros.
+> Let hash function be $H_{k}=AES_k(H_{i-1}\oplus m_{i})$, where $H_{0}$ is a 128-bit block of all zeros, and message $m$ is split into 128-bit blocks $m_{1},...,m_{k}$, the padding scheme is not important. The hash function is built from AES with 256-bit key, and the key being set to all zeros.
 > 
 > Let message $m^{'}$:
 > 
 > ```math
 > m^{'}\left\{\begin{matrix}
-> m^{'}_{1}=m_{2}\bigoplus H_{1}
+> m^{'}_{1}=m_{2}\oplus H_{1}
 > \\ 
-> m^{'}_{2}=H_{2}\bigoplus m_{2}\bigoplus H_{1}
+> m^{'}_{2}=H_{2}\oplus m_{2}\oplus H_{1}
 > \end{matrix}\right.
 > ```
 > After doing some basic math we get the result we want:
 > 
 > ```math
 > \begin{matrix}
-> H^{'}_{1}=AES_k(H_{0}\bigoplus m^{'}_{1})=AES_k(H_{0}\bigoplus m_{2}\bigoplus H_{1})=AES_k(m_{2}\bigoplus H_{1})=H_{2}
+> H^{'}_{1}=AES_k(H_{0}\oplus m^{'}_{1})=AES_k(H_{0}\oplus m_{2}\oplus H_{1})=AES_k(m_{2}\oplus H_{1})=H_{2}
 > \\ 
-> H^{'}_{2}=AES_k(H^{'}_{1}\bigoplus m^{'}_{2})=AES_k(H_{2}\bigoplus H_{2}\bigoplus m_{2}\bigoplus H_{1})=AES_k(m_{2}\bigoplus H_{1})=H_{2}
+> H^{'}_{2}=AES_k(H^{'}_{1}\oplus m^{'}_{2})=AES_k(H_{2}\oplus H_{2}\oplus m_{2}\oplus H_{1})=AES_k(m_{2}\oplus H_{1})=H_{2}
 > \end{matrix}
 > ```
 > 

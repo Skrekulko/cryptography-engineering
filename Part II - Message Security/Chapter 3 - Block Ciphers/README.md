@@ -70,23 +70,23 @@ $log_{2}2^{k}!\approx (k-1)2^{k}$
 > 
 > $L_{1}=R_{0}$
 > 
-> $R_{1}=L_{0}\bigoplus F(R_{0},K_{0})$
+> $R_{1}=L_{0}\oplus F(R_{0},K_{0})$
 > 
-> $L_{2}=L_{1}\bigoplus F(R_{1},K_{1})=R_{0}\bigoplus F(L_{0}\bigoplus F(R_{0},K_{0}),K_{1})$
+> $L_{2}=L_{1}\oplus F(R_{1},K_{1})=R_{0}\oplus F(L_{0}\oplus F(R_{0},K_{0}),K_{1})$
 > 
-> $R_{2}=R_{1}=L_{0}\bigoplus F(R_{0},K_{0})$
+> $R_{2}=R_{1}=L_{0}\oplus F(R_{0},K_{0})$
 > 
 > A very rough draft of the algorithm:
 > 
 > 1. Randomly pick a plaintext and ciphertext values $L_{0},R_{0},L_{2},R_{2}$
 > 2. Find $K_{0}$
 >    1. Pick a random $K_{0}$ value
->    2. Compute $L_{0}\bigoplus F(R_{0},K_{0})$
->    3. If $R_{2}=R_{1}=L_{0}\bigoplus F(R_{0},K_{0})$, then we have found $K_{0}$, repeat if not found
+>    2. Compute $L_{0}\oplus F(R_{0},K_{0})$
+>    3. If $R_{2}=R_{1}=L_{0}\oplus F(R_{0},K_{0})$, then we have found $K_{0}$, repeat if not found
 > 3. Find $K_{1}$
 >    1. Pick a random $K_{0}$ value
->    2. Compute $L_{0}\bigoplus F(R_{0},K_{0})$
->    3. If $R_{1}=L_{0}\bigoplus F(R_{0},K_{0})$, then we have found $K_{1}$, repeat if not found
+>    2. Compute $L_{0}\oplus F(R_{0},K_{0})$
+>    3. If $R_{1}=L_{0}\oplus F(R_{0},K_{0})$, then we have found $K_{1}$, repeat if not found
 > 
 > This way, we only need to test out $2^{48}$ possible combinations for the key, which is significantly less than $2^{56} for 56-bit key size.
 > 

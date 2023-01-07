@@ -29,9 +29,9 @@
 
 > ![Exercise 4.3](exercise_4_3.png "Exercise 4.3")
 > 
-> $C_{1}=E_{K}(S)\bigoplus P_{1}\Rightarrow E_{K}(S)=P_{1}\bigoplus C_{1}$
+> $C_{1}=E_{K}(S)\oplus P_{1}\Rightarrow E_{K}(S)=P_{1}\oplus C_{1}$
 > 
-> $C^{'}\_{1}=E_{K}(S)\bigoplus P^{'}\_{1}\Rightarrow P^{'}\_{1}=E_{K}(S)\bigoplus C^{'}\_{1}\Rightarrow P^{'}\_{1}=P_{1}\bigoplus C_{1}\bigoplus C^{'}\_{1}$
+> $C^{'}\_{1}=E_{K}(S)\oplus P^{'}\_{1}\Rightarrow P^{'}\_{1}=E_{K}(S)\oplus C^{'}\_{1}\Rightarrow P^{'}\_{1}=P_{1}\oplus C_{1}\oplus C^{'}\_{1}$
 > 
 > ```python
 > #! /usr/bin/env python
@@ -135,6 +135,6 @@
 > 
 > $K_{1}=K_{2}=K, C^{'}\_{1}=C_{2}$
 > 
-> $P_{1}=D(K,C_{1})\bigoplus C_{0},P_{2}=D(K,C_{2})\bigoplus C_{1}\Rightarrow D(K,C_{2})=P_{2}\bigoplus C_{1}$
+> $P_{1}=D(K,C_{1})\oplus C_{0},P_{2}=D(K,C_{2})\oplus C_{1}\Rightarrow D(K,C_{2})=P_{2}\oplus C_{1}$
 > 
-> $P^{'}\_{1}=D(K,C^{'}\_{1})\bigoplus C^{'}\_{0}=D(K,C\_{2})\bigoplus C^{'}\_{0}=P_{2}\bigoplus C_{1}\bigoplus C^{'}\_{0}$
+> $P^{'}\_{1}=D(K,C^{'}\_{1})\oplus C^{'}\_{0}=D(K,C\_{2})\oplus C^{'}\_{0}=P_{2}\oplus C_{1}\oplus C^{'}\_{0}$
