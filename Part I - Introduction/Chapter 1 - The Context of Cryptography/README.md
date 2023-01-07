@@ -33,46 +33,82 @@ Evaluate the potential security and privacy concerns of emerging technologies, a
 
 ## General Exercises
 
-### Exercise 1.1 - Create an attack tree for stealing a car. For this and the other attack tree exercises, you can present your attack tree as a figure (like Figure 1.1), or you can present your attack tree as a list numbered in outline form (e.g., 1, 1.1, 1.2, 1.2.1, 1.2.2, 1.3, . . . ).
+### Exercise 1.1
 
-> ![Exercise 1.1](exercise_1_1.png "Exercise 1.1")
+Create an attack tree for stealing a car. For this and the other attack tree exercises, you can present your attack tree as a figure (like Figure 1.1), or you can present your attack tree as a list numbered in outline form (e.g., 1, 1.1, 1.2, 1.2.1, 1.2.2, 1.3, . . . ).
 
-### Exercise 1.2 - Create an attack tree for getting into a gym without paying.
+#### Solution
 
-> ![Exercise 1.2](exercise_1_2.png "Exercise 1.2")
+![Exercise 1.1](exercise_1_1.png "Exercise 1.1")
 
-### Exercise 1.3 - Create an attack tree for getting food from a restaurant without paying.
+### Exercise 1.2
 
-> ![Exercise 1.3](exercise_1_3.png "Exercise 1.3")
+Create an attack tree for getting into a gym without paying.
 
-### Exercise 1.4 - Create an attack tree for learning someone’s online banking account name and password.
+#### Solution
 
-> ![Exercise 1.4](exercise_1_4.png "Exercise 1.4")
+![Exercise 1.2](exercise_1_2.png "Exercise 1.2")
 
-### Exercise 1.5 - Create an attack tree for reading someone else’s e-mail.
+### Exercise 1.3
 
-> ![Exercise 1.5](exercise_1_5.png "Exercise 1.5")
+Create an attack tree for getting food from a restaurant without paying.
 
-### Exercise 1.6 - Create an attack tree for preventing someone from being able to read his own e-mail.
+#### Solution
 
-> ![Exercise 1.6](exercise_1_6.png "Exercise 1.6")
+![Exercise 1.3](exercise_1_3.png "Exercise 1.3")
 
-### Exercise 1.7 - Create an attack tree for sending e-mail as someone else. Here, the attacker’s goal is to convince an e-mail recipient that an e-mail she receives is from someone else (say, Bob), when in fact Bob never sent that e-mail.
+### Exercise 1.4
 
-> ![Exercise 1.7](exercise_1_7.png "Exercise 1.7")
+#### Solution
 
-### Exercise 1.8 - Find a new product or system that was announced or released within the last three months. Conduct a security review of that product or system as described in Section 1.12. Pick one of the assets that you identified and construct an attack tree for compromising that asset.
+Create an attack tree for learning someone’s online banking account name and password.
 
-> ***Couldn't find anything for now (or just being lazy). Will return to this later!***
+![Exercise 1.4](exercise_1_4.png "Exercise 1.4")
 
-### Exercise 1.9 - Provide a concrete example, selected from media reports or your personal experiences, in which attackers compromised a system by exploiting something other than the weakest link. Describe the system, describe what you view the weakest link of the system to be and why, and describe how the system was compromised.
+### Exercise 1.5
 
-> Modern Teslas are an excellent example. The wireless usage of access keys, such as a mobile phone, is an example of technical innovation in the automobile business. Teslas employ the NFC protocol to get access to the car. IOAcitve Labs recently carried out a *NFC relay attack* against a Tesla Model Y by reverse-engineering Tesla's proprietary NFC protocol. There are two attackers, the first near the targeted automobile, and the second near the owner of the targeted car. This configuration allows the automobile to send signals to the owner and vice versa without the owner having to be near the car or wanting to access it. [1]
+Create an attack tree for reading someone else’s e-mail.
 
-### Exercise 1.10 - Describe a concrete example, excluding the ones given in this chapter, where improving the security of a system against one type of attack can increase the likelihood of other attacks.
+#### Solution
 
-> Again, we'll use the Tesla as an example. By switching from traditional key locks to wireless locks, we strengthen the security of accessing the automobile with a physical key, which is now obsolete. Unfortunately, the advent of NFC enabled the attackers to get access to the automobile.
+![Exercise 1.5](exercise_1_5.png "Exercise 1.5")
 
-## References
+### Exercise 1.6
 
-[1] [NFC Relay Attack On Tesla Model Y](https://labs.ioactive.com/2022/09/nfc-relay-attack-on-tesla-model-y-josep.html)
+Create an attack tree for preventing someone from being able to read his own e-mail.
+
+#### Solution
+
+![Exercise 1.6](exercise_1_6.png "Exercise 1.6")
+
+### Exercise 1.7
+
+Create an attack tree for sending e-mail as someone else. Here, the attacker’s goal is to convince an e-mail recipient that an e-mail she receives is from someone else (say, Bob), when in fact Bob never sent that e-mail.
+
+#### Solution
+
+![Exercise 1.7](exercise_1_7.png "Exercise 1.7")
+
+### Exercise 1.8
+
+Find a new product or system that was announced or released within the last three months. Conduct a security review of that product or system as described in Section 1.12. Pick one of the assets that you identified and construct an attack tree for compromising that asset.
+
+#### Solution
+
+Couldn't find anything for now (or just being lazy).
+
+### Exercise 1.9
+
+Provide a concrete example, selected from media reports or your personal experiences, in which attackers compromised a system by exploiting something other than the weakest link. Describe the system, describe what you view the weakest link of the system to be and why, and describe how the system was compromised.
+
+#### Solution
+
+Modern Teslas are an excellent example. The wireless usage of access keys, such as a mobile phone, is an example of technical innovation in the automobile business. Teslas employ the NFC protocol to get access to the car. IOAcitve Labs recently published a [paper](https://labs.ioactive.com/2022/09/nfc-relay-attack-on-tesla-model-y-josep.html), where they carried out a *NFC relay attack* against a Tesla Model Y by reverse-engineering Tesla's proprietary NFC protocol. There are two attackers, the first near the targeted automobile, and the second near the owner of the targeted car. This configuration allows the automobile to send signals to the owner and vice versa without the owner having to be near the car or wanting to access it.
+
+### Exercise 1.10
+
+Describe a concrete example, excluding the ones given in this chapter, where improving the security of a system against one type of attack can increase the likelihood of other attacks.
+
+#### Solution
+
+Again, we'll use the Tesla as an example. By switching from traditional key locks to wireless locks, we strengthen the security of accessing the automobile with a physical key, which is now obsolete. Unfortunately, the advent of NFC enabled the attackers to get access to the automobile.
