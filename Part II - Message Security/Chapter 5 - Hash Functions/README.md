@@ -9,10 +9,10 @@ possible input values to the set of all possible output values.*
 
 - **Definition 5** - *An attack on a hash function is a non-generic method of distinguishing
 the hash function from an ideal hash function.*
-- 
-- **Definition 6** - *Let $b$ be an iterative hash function. The hash function $h_{DBL}$ is defined by $h_{DBL}(m):=h(h(m)\parallel m)$.*
 
-- **Definition 7** - *Let $h$ be an iterative hash function, and let $b$ denote the block length of the underlying compression function. The hash function $h_{d}$ is defined by $h_{d}:=h(h(0^{b}\parallel m)), and has a claimed security level of $min(k,\frac{n}{2})$ where $k$ is the security level of $h$ and $n$ is the size of the hash result.*
+- **Definition 6** - *Let* $b$ *be an iterative hash function. The hash function* $h_{DBL}$ *is defined by* $h_{DBL}(m):=h(h(m)\parallel m)$*.*
+
+- **Definition 7** - *Let* $h$ *be an iterative hash function, and let* $b$ *denote the block length of the underlying compression function. The hash function* $h_{d}$ *is defined by* $h_{d}:=h(h(0^{b}\parallel m))$*, and has a claimed security level of* $min(k,\frac{n}{2})$ *where* $k$ *is the security level of* $h$ *and* $n$ *is the size of the hash result.*
 
 ## Exercises
 
