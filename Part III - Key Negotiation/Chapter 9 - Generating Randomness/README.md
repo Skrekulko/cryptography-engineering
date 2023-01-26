@@ -1,11 +1,5 @@
 # Chapter 9 - Generating Randomness
 
-## Notes
-
-### Something To Think About
-
-***Standard implementation techniques are entirely inadequate to create source code.***
-
 ## Exercises
 
 ### Exercise 9.1
