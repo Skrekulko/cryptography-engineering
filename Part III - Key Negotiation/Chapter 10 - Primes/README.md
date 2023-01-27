@@ -30,7 +30,7 @@ Implement **SmallPrimeList**. What is the worst-case performance of **SmallPrime
 
 #### Solution
 
-
+Here you go, [list of small primes](https://primes.utm.edu/lists/small/). Skip.
 
 ### Exercise 10.2
 
