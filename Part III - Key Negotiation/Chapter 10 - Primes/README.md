@@ -1,5 +1,27 @@
 # Chapter 10 - Primes
 
+## Notes
+
+### Lemmas And Theorems
+
+**Lemma 1** - $\textit{If a | b and b | c then a | c.}$
+
+*Proof*. If $a\\, |\\, b$, then there is an integer s such that $as=b$. (After all, $b$ is divisible by a so it must be a multiple of $a$.) And if $b\\, |\\, c$ then there is an integer $t$ such that $bt=c$. But this implies that $c=bt=(as)t=a(st)$ and therefore $a$ is a divisor of $c$. (To follow this argument, just verify that each of the equal signs is correct. The conclusion is that the first item $c$ must be equal to the last item $a(st)$.)
+
+**Lemma 2** - $\textit{Let n be a positive number greater than 1. Let d be the smallest divisor of n that is greater than 1. Then d is prime.}$
+
+*Proof*. First of all, we have to check that $d$ is well defined. (If there is a number $n$ that has no smallest divisor, then $d$ is not properly defined and the lemma is nonsensical.) We know that $n$ is a divisor of $n$, and $n > 1$, so there is at least one divisor of $n$ that is greater than $1$. Therefore, there must also be a smallest divisor greater than $1$.
+
+To prove that $d$ is prime, we use a standard mathematician’s trick called *reductio ad absurdum* or *proof by contradiction*. To prove a statement $X$, we first assume that $X$ is not true and show that this assumption leads to a contradiction. If assuming that $X$ is not true leads to a contradiction, then obviously $X$ must be true.
+
+In our case, we will assume that $d$ is not a prime. If $d$ is not a prime, it has a divisor $e$ such that $1 < e < d$. But we know from **Lemma 1** that if $e\\, |\\, d$ and $d\\, |\\, n$ then $e\\, |\\, n$, so $e$ is a divisor of $n$ and is smaller than $d$. But this is a contradiction, because $d$ was defined as the smallest divisor of $n$. Because a contradiction cannot be true, our assumption must be false, and therefore $d$ must be prime.
+
+**Theomer 3** (Euclid) - $\textit{There are an infinite number of primes.}$
+
+*Proof*. We again assume the opposite of what we try to prove. Here we assume that the number of primes is finite, and therefore that the list of primes is finite. Let’s call them $p_{1},p_{2},p_{3},...,p_{k}$, where $k$ is the number of primes. We define the number $n:=p_{1},p_{2},p_{3},...,p_{k+1}$, which is the product of all our primes plus one.
+
+Consider the smallest divisor greater than $1$ of $n$; we’ll call it $d$ again. Now $d$ is prime (by **Lemma 2**) and $d\\, |\\, n$. But none of the primes in our finite list of primes is a divisor of $n$. After all, they are all divisors of $n − 1$, so if you divide $n$ by one of the $p_{i}$’s in the list, you are always left with a remainder of $1$. So $d$ is a prime and it is not in the list. But this is a contradiction, as the list is defined to contain all the primes. Thus, assuming that the number of primes is finite leads to a contradiction. We are left to conclude that the number of primes is infinite.
+
 ## Exercises
 
 ### Exercise 10.1
