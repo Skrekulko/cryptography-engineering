@@ -64,7 +64,7 @@ In practice, the best choice is almost always a Cryptographically Strong PRNG, s
 
 ### Exercise 9.5
 
-Using a cryptographic *PRNG* that outputs a stream of bits, implement a random number generator that outputs random integers in the set $0,1,...,n-1$ for any $n$ between 1 and 232.
+Using a cryptographic *PRNG* that outputs a stream of bits, implement a random number generator that outputs random integers in the set $0,1,...,n-1$ for any $n$ between $1$ and $232$.
 
 #### Solution
 
@@ -91,7 +91,7 @@ Output:
 
 ### Exercise 9.6
 
-Implement a naive approach for generating random numbers in the set $0,1,...,191$. For this naive approach, generate a random 8-bit value, interpret that value as an integer, and reduce that value modulo 192. Experimentally generate a large number of random numbers in the set $0,1,...,191$ and report on the distribution of results.
+Implement a naive approach for generating random numbers in the set $0,1,...,191$. For this naive approach, generate a random 8-bit value, interpret that value as an integer, and reduce that value modulo $192$. Experimentally generate a large number of random numbers in the set $0,1,...,191$ and report on the distribution of results.
 
 #### Solution
 
