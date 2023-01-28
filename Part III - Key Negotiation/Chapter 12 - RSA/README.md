@@ -94,7 +94,7 @@ n=pq=83\cdot 101=8383\\
 \textrm{We'll use Eurler's totient function instead of Carmichael's:}\\
 \phi (n)=(p-1)(q-1)=(83-1)(101-1)=82\cdot 100=8200\\
 \\
-\textrm{Choose }e\textrm{ such that }1<e<\phi (n)\textrm{ and is coprime to }\phi (n)\textrm{.}\\
+\textrm{Choose $e$ such that $1 < e < \phi (n)$ and is coprime to $\phi (n)$.}\\
 e=3\\
 \\
 \textrm{Calculate }d\textrm{, themodular multiplicative inverse of }e\bmod \phi (n)\textrm{.}\\
@@ -115,8 +115,8 @@ n=pq=73\cdot 89=6497\\
 \textrm{We'll use Eurler's totient function instead of Carmichael's:}\\
 \phi (n)=(p-1)(q-1)=(73-1)(89-1)=72\cdot 88=6336\\
 \\
-\textrm{Choose }e\textrm{ such that }1<e<\phi (n)\textrm{ and is coprime to }\phi (n)\textrm{.}\\
-e=3\textrm{ is not a coprime to }\phi (n)\textrm{, since gcd}(e, \phi (n))=3\neq 1\\
+\textrm{Choose $e$ such that $ 1 < e < \phi (n) $ and is coprime to $\phi (n)$.}\\
+e=3\textrm{ is not a coprime to }\phi (n)\textrm{, since gcd}(e, \phi (n))=3\neq 1
 \end{matrix}
 ```
 
@@ -126,7 +126,7 @@ To speed up decryption, Alice has chosen to set her private key $d = 3$ and comp
 
 #### Solution
 
-The main cost for a user of RSA is computing modular exponentiation, which for the exponent $x$ costs $\left \lfloor \log _{2}x \right \rfloor$ squarings and $H(x)-1$ multiplications, where $H$ is Hamming weight. The most efficient exponent is $3$, but this can be only done for the public exponent. If picked as a private exponent $d=3$, $e$ would still have to be published in order for anyone to encrypt messages, but by doing this, then armed with knowledge of $e$ and $d$,$\lambda (n)$ and factor $n$ it is possible to find and break the whole RSA. What if $d$ would be picked to be small to speed up decryption? As it happens, if $d$ is merely smaller than about $\sqrt[4]{n}$, [Wiener's attack](https://en.wikipedia.org/wiki/Wiener%27s_attack) or a variant thereof can be used to recover it. It is therefore crucial that the private exponent $d$ be near uniformly distributed in the whole possible space, which is effectively the case even if the public exponent $e$ is chosen always to be something small like $3$ or $65537$. Thus while it is perfectly safe in sensible RSA-type cryptosystem to always use $e=3$, it is dangerous to choose even moderately small $d$; the exponents are very much not interchangeable.
+The main cost for a user of RSA is computing modular exponentiation, which for the exponent $x$ costs $\left \lfloor \log _{2}x \right \rfloor$ squarings and $H(x)-1$ multiplications, where $H$ is Hamming weight. The most efficient exponent is $3$, but this can be only done for the public exponent. If picked as a private exponent $d=3$, $e$ would still have to be published in order for anyone to encrypt messages, but by doing this, then armed with knowledge of $e$ and $d$, $\lambda (n)$ and factor $n$ it is possible to find and break the whole RSA. What if $d$ would be picked to be small to speed up decryption? As it happens, if $d$ is merely smaller than about $\sqrt[4]{n}$, [Wiener's attack](https://en.wikipedia.org/wiki/Wiener%27s_attack) or a variant thereof can be used to recover it. It is therefore crucial that the private exponent $d$ be near uniformly distributed in the whole possible space, which is effectively the case even if the public exponent $e$ is chosen always to be something small like $3$ or $65537$. Thus while it is perfectly safe in sensible RSA-type cryptosystem to always use $e=3$, it is dangerous to choose even moderately small $d$; the exponents are very much not interchangeable.
 
 ### Exercise 12.7
 
@@ -138,7 +138,7 @@ Hell nah! [NIST recommends](https://csrc.nist.gov/publications/detail/sp/800-131
 
 ### Exercise 12.8
 
-Let $p = 71$, $q = 89$, $n = pq$, and $e = 3$. First find $d$. Then compute the signature on $m_{1} = 5416$,$m_{2} = 2397$, and $m_{3} = m_{1}m_{2} \bmod n$ using the basic RSA operation. Show that the third signature is equivalent to the product of the first two signatures.
+Let $p = 71$, $q = 89$, $n = pq$, and $e = 3$. First find $d$. Then compute the signature on $m_{1} = 5416$, $m_{2} = 2397$, and $m_{3} = m_{1}m_{2} \bmod n$ using the basic RSA operation. Show that the third signature is equivalent to the product of the first two signatures.
 
 #### Solution
 
