@@ -2,7 +2,7 @@
 
 ## Exercises
 
-### Exercise 13.1
+### Exercise 14.1
 
 In Section 14.5, we stated that a property of the protocol could result in providing erroneous information to investigating administrators. Give a concrete scenario where this could be a problem.
 
@@ -36,7 +36,7 @@ k\leftarrow Y^{x} & & k\leftarrow X^{y}
 
 The mentioned property of the protocol is the *lack of "liveness"*, since one party cannot (in this case Bob) cannot be sure, if the other party (Alice) is "alive" and that it's not talking to a replaying ghost. This means, that we'll be replying to a "dead" party and we wouldn't even know it.
 
-### Exercise 13.2
+### Exercise 14.2
 
 Suppose Alice and Bob implement the final protocol in Section 14.7. Could an attacker exploit a property of this protocol to mount a denial-of-service attack against Alice? Against Bob?
 
@@ -74,7 +74,7 @@ y\in _{R}{\{1,...,q-1\}}
 
 If I understand it correctly, the denial-of-service attack could happen when Bob awaits authentication from Alice. An attack could make thousands of such connections and just let Bob hang on the authentication part from Alice. He would be waiting for an authentication with no result.
 
-### Exercise 13.3
+### Exercise 14.3
 
 Find a new product or system that uses (or should use) a key negotiation protocol. This might be the same product or system you analyzed for Exercise 1.8. Conduct a security review of that product or system as described in Section 1.12, this time focusing on the security and privacy issues surrounding the key negotiation protocol.
 
