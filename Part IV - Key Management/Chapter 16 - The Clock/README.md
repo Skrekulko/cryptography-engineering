@@ -4,7 +4,7 @@
 
 ### Exercise 16.1
 
-Some computers use NTP at boot, or at regular intervals. Turn off NTP for one week on your computer. Write a program that at regular intervals (at least once every two hours) records both the true time and the time reported by your computer. Let t0 be the initial true time at the start of your experiment. For each time measurement pair, plot the true time minus $t_{0]$ on the horizontal axis of a graph and plot your computer’s time minus true time on the vertical axis. How different is your computer’s clock from true time after one week? Does your graph tell you anything else?
+Some computers use NTP at boot, or at regular intervals. Turn off NTP for one week on your computer. Write a program that at regular intervals (at least once every two hours) records both the true time and the time reported by your computer. Let t0 be the initial true time at the start of your experiment. For each time measurement pair, plot the true time minus $t_{0}$ on the horizontal axis of a graph and plot your computer’s time minus true time on the vertical axis. How different is your computer’s clock from true time after one week? Does your graph tell you anything else?
 
 #### Solution
 
