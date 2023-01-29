@@ -12,7 +12,15 @@ As part of my self-study in the immense field of security engineering, I will sh
 
 Done with this book. It was a great experience, and I highly recommend any publications from the authors.
 
-### Table Of Contents
+### Something To Think About
+
+***A security system is only as strong as its weakest link.***
+
+### Notes
+
+Part V doesn't contain any exercises, so no sub directory for this one here.
+
+## Table Of Contents
 
 - Part I Introduction
   - Chapter 1 The Context of Cryptography
@@ -42,14 +50,6 @@ Done with this book. It was a great experience, and I highly recommend any publi
 - Part V Miscellaneous
   - Chapter 22 Standards and Patents
   - Chapter 23 Involving Experts
-
-### Something To Think About
-
-***A security system is only as strong as its weakest link.***
-
-### Notes
-
-Part V doesn't contain any exercises, so no sub directory for this one here.
 
 ## License
 Everything in this repository is released under the terms of the MIT License. For more information, please see the file "LICENSE".
