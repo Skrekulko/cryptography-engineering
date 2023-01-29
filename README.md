@@ -50,3 +50,6 @@ Done with this book. It was a great experience, and I highly recommend any publi
 ### Notes
 
 Part V doesn't contain any exercises, so no sub directory for this one here.
+
+## License
+Everything in this repository is released under the terms of the MIT License. For more information, please see the file "LICENSE".
