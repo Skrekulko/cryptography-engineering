@@ -16,10 +16,6 @@ Done with this book. It was a great experience, and I highly recommend any publi
 
 ***A security system is only as strong as its weakest link.***
 
-### Notes
-
-Part V doesn't contain any exercises, so no sub directory for this one here.
-
 ## Table Of Contents
 
 - Part I Introduction
